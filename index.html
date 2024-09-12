@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            border: 1px solid red;
+            width: 70%;
+            height: auto;
+            margin: auto;
+        }
+        .container div {
+            border: 1px solid red;
+            flex-basis: 200;
+            display: inline-block;
+        }
+        .nombre{
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
     <title>Rubrica</title>
 </head>
 <body>
-    <div>
-        <div>
+    <div class="container">
+        <div class="nombre">
             <label for="">Alain Rodelo Salgado</label>
             <p>
                 Soy estudiante de la universidad de la costa, en cuarto semestre de ingeneiería de sistemas.
