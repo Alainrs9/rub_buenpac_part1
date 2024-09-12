@@ -4,25 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .container{
             display: flex;
             justify-content: center;
             align-items: center;
             align-content: center;
             flex-wrap: wrap;
-            border: 1px solid red;
+            border: 1px solid rgb(206, 194, 194);
+            border-radius: 15px;
             width: 70%;
             height: auto;
             margin: auto;
         }
         .container div {
-            border: 1px solid red;
             flex-basis: 200;
             display: inline-block;
         }
         .nombre{
+            width: 70%;
             text-align: center;
             font-size: 20px;
+        }
+        .habilidades{
+            display: block;
+            width: 100%;
+        }
+        .habilidades label{
+            display: block;
+            text-align: center;
+        }
+        .habilidades ul li{
+            text-align: center;
+            list-style: none;
+        }
+        .libros{
+            border: 1px solid rgb(206, 194, 194);
+            border-radius: 15px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .libros label{
+            display: block;
+            font-size: 20px;
+        }
+        .libros .titulo{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .libros div{
+            
+            width: 30%;
+            overflow: hidden;
+        }
+        .libros div img{
+            width: 100%;
+            height: 100%;
         }
     </style>
     <title>Rubrica</title>
@@ -32,10 +71,11 @@
         <div class="nombre">
             <label for="">Alain Rodelo Salgado</label>
             <p>
-                Soy estudiante de la universidad de la costa, en cuarto semestre de ingeneiería de sistemas.
+                Soy estudiante de la universidad de la costa, en cuarto semestre de ingeneiería de sistemas. 
+                Me gusta escuhar música y jiugar video juegos, salir a caminar, manejar bicicleta y aprender cosas nuevas.
             </p>
         </div>
-        <div>
+        <div class="habilidades">
             <label for="">Habilidades</label>
             <p>
                 <ul>
@@ -47,21 +87,22 @@
                 </ul>
             </p>
         </div>
-        <div>
-            <label for="">Libros</label>
+        <div class="libros">
+            <label for="" class="titulo">Libros</label>
             <div>
                 <label for="">Relato de un náufrago</label>
                 <img src="https://www.penguinlibros.com/co/1694017-large_default/relato-de-un-naufrago.webp" alt="" srcset="">
             </div>
+            <div>
+                <label for="">La ilíada</label>
+                <img src="https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/62542902e650b33bf6b7a912_60e710db1c3ed16b7bfff0df_9788418008962_Cub.jpeg" alt="" srcset="">
+            </div>
+            <div>
+                <label for="">El diarío de Ana Frank</label>
+                <img src="https://www.eluniverso.com/resizer/v2/DDIS5U66IJBHRK5U57JRJSXTVI.jpg?auth=ff43c7d710ed48badc82c32a45b1f3f5afacd64221d08848b5287475be41001b&width=448&height=670&quality=75&smart=true" alt="" srcset="">
+            </div>
         </div>
-        <div>
-            <label for="">La ilíada</label>
-            <img src="https://cdn.prod.website-files.com/6034d7d1f3e0f52c50b2adee/62542902e650b33bf6b7a912_60e710db1c3ed16b7bfff0df_9788418008962_Cub.jpeg" alt="" srcset="">
-        </div>
-        <div>
-            <label for="">El diarío de Ana Frank</label>
-            <img src="https://www.eluniverso.com/resizer/v2/DDIS5U66IJBHRK5U57JRJSXTVI.jpg?auth=ff43c7d710ed48badc82c32a45b1f3f5afacd64221d08848b5287475be41001b&width=448&height=670&quality=75&smart=true" alt="" srcset="">
-        </div>
+        
     </div>
 </body>
 </html>
